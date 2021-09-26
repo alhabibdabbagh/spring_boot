@@ -43,4 +43,9 @@ private EmployeeDAO employeeDAOJPA;
     public void deleteById(int id) {
 
     }
+
+    @Override
+    public Employee updateEmployee(Employee employee) {
+        return (Employee) employeeDAOJPA.updateEmployee(employee);
+    }
 }

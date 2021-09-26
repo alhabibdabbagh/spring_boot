@@ -48,4 +48,9 @@ public class EmployeeDAOJPAImpl implements EmployeeDAO<Employee> {
     public void deleteById(int id) {
 
     }
+
+    @Override
+    public Employee updateEmployee(Employee employee) {
+        return null;
+    }
 }
