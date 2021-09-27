@@ -41,7 +41,7 @@ private EmployeeDAO employeeDAOJPA;
 
     @Override
     public void deleteById(int id) {
-
+employeeDAOJPA.deleteById(id);
     }
 
     @Override

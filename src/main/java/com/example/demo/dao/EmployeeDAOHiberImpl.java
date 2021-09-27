@@ -40,8 +40,10 @@ public class EmployeeDAOHiberImpl implements EmployeeDAO<Employee> {
     }
 
     @Override
+    @Transactional
     public void deleteById(int id) {
-
+    Employee e =entityManager.find(Employee.class,id);
+    entityManager.remove(e);
     }
 
     @Override
